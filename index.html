@@ -3,35 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhishek Tripathi | Links</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Abhishek Tripathi | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
-  <div class="bg-white p-6 rounded-2xl shadow-xl w-full max-w-md text-center space-y-4">
-    <!-- Profile Picture -->
-    <img src="1659367643964.jpg" alt="Abhishek Tripathi" class="w-24 h-24 mx-auto rounded-full object-cover shadow">
+<body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+  <div class="min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-xl w-full max-w-md text-center space-y-4">
+      <!-- Dark Mode Toggle Button -->
+      <button onclick="toggleDarkMode()" class="absolute top-4 right-4 text-gray-600 dark:text-gray-300 text-2xl">
+        <i id="darkModeIcon" class="fas fa-moon"></i>
+      </button>
 
-    <!-- Name and Bio -->
-    <h1 class="text-2xl font-bold">Abhishek Tripathi</h1>
-    <p class="text-sm text-gray-600">Aspiring developer | Tech Enthusiast | Always Learning</p>
+      <!-- Profile Picture -->
+      <div class="w-24 h-24 mx-auto rounded-full bg-gray-300 dark:bg-gray-600 flex items-center justify-center shadow">
+        <i class="fas fa-user text-3xl text-gray-600 dark:text-gray-300"></i>
+      </div>
 
-    <!-- Social Media Links -->
-    <div class="space-y-2">
-      <a href="https://instagram.com/abhitripaathi" class="block bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-full">Instagram</a>
-      <a href="#" class="block bg-blue-400 hover:bg-blue-500 text-white py-2 px-4 rounded-full">Twitter</a>
-      <a href="#" class="block bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded-full">LinkedIn</a>
-      <a href="#" class="block bg-gray-800 hover:bg-black text-white py-2 px-4 rounded-full">GitHub</a>
-      <a href="#" class="block bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-full">YouTube</a>
+      <!-- Name and Bio -->
+      <h1 class="text-2xl font-bold text-gray-800 dark:text-white">Abhishek Tripathi</h1>
+      <p class="text-sm text-gray-600 dark:text-gray-300">Aspiring Developer | Tech Enthusiast | Always Learning</p>
+
+      <!-- Social Media Links -->
+      <div class="space-y-2">
+        <a href="https://instagram.com/abhitripaathi" target="_blank" class="block bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-full">
+          <i class="fab fa-instagram mr-2"></i>Instagram
+        </a>
+        <a href="https://www.linkedin.com/in/abhishek-tripathi-21b47a270" target="_blank" class="block bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded-full">
+          <i class="fab fa-linkedin mr-2"></i>LinkedIn
+        </a>
+        <a href="https://github.com/abhitripaathi" target="_blank" class="block bg-black hover:bg-gray-900 text-white py-2 px-4 rounded-full">
+          <i class="fab fa-github mr-2"></i>GitHub
+        </a>
+        <a href="https://youtube.com/@AbhiTechTalkwithAI" target="_blank" class="block bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-full">
+          <i class="fab fa-youtube mr-2"></i>YouTube
+        </a>
+        <a href="https://www.facebook.com/abhishek.tripathi.765829" target="_blank" class="block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+          <i class="fab fa-facebook mr-2"></i>Facebook
+        </a>
+        <a href="https://snapchat.com/add/abhitripathi_11" target="_blank" class="block bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-full">
+          <i class="fab fa-snapchat mr-2"></i>Snapchat
+        </a>
+        <a href="https://wa.me/917355055611" target="_blank" class="block bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full">
+          <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+        </a>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="text-sm text-gray-600 dark:text-gray-300 pt-4">
+        <p><i class="fas fa-envelope mr-2"></i> <a href="mailto:abhishektripathi354200@gmail.com" class="text-blue-500 hover:underline dark:text-blue-400">abhishektripathi354200@gmail.com</a></p>
+        <p class="mt-1"><i class="fas fa-phone mr-2"></i> <a href="tel:+917355055611" class="text-blue-500 hover:underline dark:text-blue-400">+91 7355055611</a></p>
+      </div>
+
+      <!-- Resume Download -->
+      <a href="resume.pdf" download class="inline-block mt-4 bg-gray-700 hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-700 text-white py-2 px-4 rounded-full text-sm">
+        <i class="fas fa-download mr-2"></i>Download Resume
+      </a>
     </div>
-
-    <!-- Contact Info -->
-    <div class="text-sm text-gray-600 pt-4">
-      <p>Email: <a href="mailto:abhishektripathi354200@gmail.com" class="text-blue-500">abhishektripathi354200@gmail.com</a></p>
-      <p>Phone: <a href="tel:+917355055611" class="text-blue-500">+91 7355055611</a></p>
-    </div>
-
-    <!-- Resume Download -->
-    <a href="408e93b7-b15d-4682-bf9e-361117626053.jpeg" download class="inline-block mt-4 bg-gray-700 hover:bg-gray-800 text-white py-2 px-4 rounded-full text-sm">Download CV</a>
   </div>
+
+  <script>
+    // Check for saved theme preference or use system preference
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      document.getElementById('darkModeIcon').classList.replace('fa-moon','fa-sun');
+    } else {
+      document.documentElement.classList.remove('dark');
+      document.getElementById('darkModeIcon').classList.replace('fa-sun','fa-moon');
+    }
+
+    // Toggle dark/light mode
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+        document.getElementById('darkModeIcon').classList.replace('fa-sun','fa-moon');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+        document.getElementById('darkModeIcon').classList.replace('fa-moon','fa-sun');
+      }
+    }
+  </script>
 </body>
 </html>
